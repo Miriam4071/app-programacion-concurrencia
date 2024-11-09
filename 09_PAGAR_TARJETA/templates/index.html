@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Pago</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='index.css')}}">
+</head>
+<body>
+    <h2>Pagar con Tarjeta</h2>
+    <form action="/pagar" method="POST">
+        <label for="tarjeta">Número de Tarjeta:</label>
+        <input type="text" id="tarjeta" name="tarjeta" required><br><br>
+
+        <label for="expiracion">Fecha de Expiración:</label>
+        <input type="month" id="expiracion" name="expiracion" required><br><br>
+
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" required><br><br>
+
+        <input type="submit" value="Pagar">
+    </form>
+</body>
+</html>

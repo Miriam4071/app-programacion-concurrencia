@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Satisfacción</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+</head>
+<body>
+    <h2>Encuesta de Satisfacción</h2>
+    <form action="/submit-survey" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br>
+
+        <label for="satisfaccion">Nivel de satisfacción:</label>
+        <input type="range" id="satisfaccion" name="satisfaccion"><br>
+
+        <label for="comentarios">Comentarios:</label><br>
+        <textarea name="comentarios" id="comentarios" rows="comentarios"></textarea>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

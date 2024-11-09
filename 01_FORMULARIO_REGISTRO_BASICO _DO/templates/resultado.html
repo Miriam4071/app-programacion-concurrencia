@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Básico</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='resumen.css')}}">
+</head>
+<body>
+    <h2>Resultados</h2>
+    <p>Nombre: {{user.nombre}}</p>
+    <p>Correo: {{user.email}}</p>
+    <p>Contraseña: {{user.password}}</p>
+</body>
+</html>

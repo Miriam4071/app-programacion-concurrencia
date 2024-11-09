@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de Preferencia</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='index.css')}}">
+</head>
+<body>
+    <h2>Encuesta de Preferencia</h2>
+    <form action="/encuesta-preferencias" method="POST">
+        <label for="color">Color Favorito:</label>
+        <input type="text" id="color" name="color"><br><br>
+
+        <label for="comida">Comida Favorita:</label>
+        <input type="text" id="comida" name="comida"><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

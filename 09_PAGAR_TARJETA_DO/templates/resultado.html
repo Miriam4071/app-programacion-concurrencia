@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Pago</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='resultados.css')}}">
+</head>
+<body>
+    <h2>Resultados</h2>
+    <p>Número de Tarjeta: {{user.tarjeta}}</p>
+    <p>Fecha de Expiración: {{user.expiracion}}</p>
+    <p>CVV: {{user.cvv}}</p>
+</body>
+</html>
